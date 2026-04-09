@@ -30,3 +30,39 @@ id = "1gu0EUW5cpBhJFZEr5Wo6"
 uri = "file://artifacts/rc-patel-interior/public/images/about-details.png"
 type = "image"
 title = "design craftsmanship details"
+
+[[generated]]
+id = "pJq8sXWZ4JfVjYrVcmYO5"
+uri = "file://artifacts/rc-patel-interior/public/images/hero.png"
+type = "image"
+title = "Hero living room"
+
+[[generated]]
+id = "r7MJMTgQibirDUOs26SKn"
+uri = "file://artifacts/rc-patel-interior/public/images/about.png"
+type = "image"
+title = "About studio"
+
+[[generated]]
+id = "AutwZeO8ADmE45QwSwsOR"
+uri = "file://artifacts/rc-patel-interior/public/images/kitchen.png"
+type = "image"
+title = "Modern kitchen"
+
+[[generated]]
+id = "OE3ISN5lwdIGEcmC4Zr9w"
+uri = "file://artifacts/rc-patel-interior/public/images/bedroom.png"
+type = "image"
+title = "Luxury bedroom"
+
+[[generated]]
+id = "pZTqzfgLUfS4vQDxZL-ZS"
+uri = "file://artifacts/rc-patel-interior/public/images/office.png"
+type = "image"
+title = "Corporate office"
+
+[[generated]]
+id = "C4S74O9U5qXg2H-z35fqf"
+uri = "file://artifacts/rc-patel-interior/public/images/hospitality.png"
+type = "image"
+title = "Hospitality interior"
