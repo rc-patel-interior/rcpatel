@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-echo "==> Installing pnpm..."
-npm install -g pnpm
+echo "==> Installing pnpm@10.26.1..."
+npm install -g pnpm@10.26.1
 
 echo "==> Installing all dependencies..."
 pnpm install --frozen-lockfile
