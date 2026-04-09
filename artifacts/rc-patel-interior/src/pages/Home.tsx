@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, Mail, MapPin, Phone, Instagram, Facebook, Menu, X, Upload, CheckCircle } from "lucide-react";
+import { ArrowRight, Mail, MapPin, Phone, Instagram, Menu, X, Upload, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useCreateEnquiry, useRequestUploadUrl } from "@workspace/api-client-react";
 import { useToast } from "@/hooks/use-toast";
@@ -121,7 +121,7 @@ function HeroSection() {
           transition={{ duration: 0.9, ease: "easeOut" }}
         >
           <p className="text-xs sm:text-sm uppercase tracking-[0.25em] sm:tracking-[0.3em] mb-4 sm:mb-6 text-white/70">
-            Interior Design Studio · Gujarat, India
+            Interior Design Studio · Mumbai, India
           </p>
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-light mb-6 sm:mb-8 max-w-4xl mx-auto leading-tight">
             Where Precision Meets{" "}
@@ -449,9 +449,9 @@ function ContactSection() {
 
             <div className="space-y-5 sm:space-y-6">
               {[
-                { icon: MapPin, label: "Studio Location", value: "Surat, Gujarat, India" },
-                { icon: Phone, label: "Phone / WhatsApp", value: "+91 98765 43210" },
-                { icon: Mail, label: "Email", value: "info@rcpatelinterior.com" },
+                { icon: MapPin, label: "Studio Location", value: "Mumbai, India" },
+                { icon: Phone, label: "Phone / WhatsApp", value: "+91 89766 37493" },
+                { icon: Mail, label: "Email", value: "crpmumbai15@gmail.com" },
               ].map(({ icon: Icon, label, value }) => (
                 <div key={label} className="flex items-center gap-4">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-secondary rounded-full flex items-center justify-center text-primary flex-shrink-0">
@@ -643,15 +643,15 @@ function Footer() {
               R C Patel Interior
             </div>
             <p className="text-background/60 max-w-sm text-xs sm:text-sm leading-relaxed">
-              Transforming raw spaces into refined living environments. Serving residential and commercial clients across Gujarat, India.
+              Transforming raw spaces into refined living environments. Serving residential and commercial clients across Mumbai, India.
             </p>
           </div>
           <div className="flex gap-3">
-            <a href="#" className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-background/20 flex items-center justify-center hover:bg-primary hover:border-primary transition-colors" aria-label="Instagram">
+            <a href="https://www.instagram.com/r.cpatelinterior" target="_blank" rel="noopener noreferrer" className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-background/20 flex items-center justify-center hover:bg-primary hover:border-primary transition-colors" aria-label="Instagram">
               <Instagram className="w-4 h-4" />
             </a>
-            <a href="#" className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-background/20 flex items-center justify-center hover:bg-primary hover:border-primary transition-colors" aria-label="Facebook">
-              <Facebook className="w-4 h-4" />
+            <a href="https://wa.me/918976637493" target="_blank" rel="noopener noreferrer" className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-background/20 flex items-center justify-center hover:bg-primary hover:border-primary transition-colors" aria-label="WhatsApp">
+              <Phone className="w-4 h-4" />
             </a>
           </div>
         </div>
@@ -670,7 +670,7 @@ function Footer() {
 function WhatsAppFAB() {
   return (
     <a
-      href="https://wa.me/919876543210"
+      href="https://wa.me/918976637493"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-50 bg-[#25D366] text-white p-3 sm:p-4 rounded-full shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-300 flex items-center justify-center"
