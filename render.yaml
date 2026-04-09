@@ -5,6 +5,7 @@ services:
     region: singapore
     plan: free
     buildCommand: bash scripts/build-prod.sh
+    preDeployCommand: pnpm --filter @workspace/db run push
     startCommand: node --enable-source-maps artifacts/api-server/dist/index.mjs
     healthCheckPath: /api/healthz
     envVars:

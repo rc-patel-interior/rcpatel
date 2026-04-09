@@ -13,7 +13,4 @@ BASE_PATH=/ NODE_ENV=production pnpm --filter @workspace/rc-patel-interior run b
 echo "==> Building API server (Express)..."
 pnpm --filter @workspace/api-server run build
 
-echo "==> Pushing database schema..."
-pnpm --filter @workspace/db run push
-
 echo "==> Build complete!"
