@@ -67,8 +67,33 @@ Full-stack website for RC Patel Interior — a professional interior design stud
 - `PUBLIC_OBJECT_SEARCH_PATHS` — Public object paths
 - `PRIVATE_OBJECT_DIR` — Private object directory
 
-## Deployment
+## Deployment (Render — Full-Stack, 24/7 Free)
 
-The app is built to deploy as a static frontend + Express backend. For free hosting:
-- **Netlify** — Frontend only (static build of rc-patel-interior)
-- **Railway / Render** — Full-stack (frontend + API server)
+The app deploys as a single web service on Render. The Express server serves both the API and the built React frontend.
+
+### Files
+- `render.yaml` — Render configuration (web service + PostgreSQL DB)
+- `scripts/build-prod.sh` — Full production build script
+
+### Build Command
+```
+bash scripts/build-prod.sh
+```
+
+### Start Command
+```
+node --enable-source-maps artifacts/api-server/dist/index.mjs
+```
+
+### Steps to Deploy on Render
+1. Push code to GitHub
+2. Go to [render.com](https://render.com) → New → Blueprint
+3. Connect your GitHub repo — Render auto-reads `render.yaml`
+4. Set the `ADMIN_KEY` env var to your preferred password (default: `rcpatel-admin-2025`)
+5. Deploy — Render builds and runs everything automatically
+
+### How It Works in Production
+- `NODE_ENV=production` → Express serves `artifacts/rc-patel-interior/dist/public/` as static files
+- All `/api/*` routes handled by Express
+- All other routes serve `index.html` (SPA routing)
+- DB schema auto-pushed on every build via `drizzle-kit push`

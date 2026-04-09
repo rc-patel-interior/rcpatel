@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: rc-patel-interior
+    runtime: node
+    region: singapore
+    plan: free
+    buildCommand: bash scripts/build-prod.sh
+    startCommand: node --enable-source-maps artifacts/api-server/dist/index.mjs
+    healthCheckPath: /api/healthz
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: rc-patel-db
+          property: connectionString
+      - key: ADMIN_KEY
+        generateValue: false
+        value: rcpatel-admin-2025
+      - key: SESSION_SECRET
+        generateValue: true
+
+databases:
+  - name: rc-patel-db
+    databaseName: rcpateldb
+    user: rcpatel
+    region: singapore
+    plan: free
