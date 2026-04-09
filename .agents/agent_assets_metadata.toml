@@ -1,0 +1,32 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "M4JH4dYZ8ga8yagW5YHGa"
+uri = "file://artifacts/rc-patel-interior/public/images/hero-bg.png"
+type = "image"
+title = "luxurious minimal living room"
+
+[[generated]]
+id = "TY0hAXiw0jWEKYqG3x9AN"
+uri = "file://artifacts/rc-patel-interior/public/images/portfolio-1.png"
+type = "image"
+title = "modern minimal bedroom"
+
+[[generated]]
+id = "eGJOqIG8CAqITsmpo62bI"
+uri = "file://artifacts/rc-patel-interior/public/images/portfolio-2.png"
+type = "image"
+title = "sophisticated modular kitchen"
+
+[[generated]]
+id = "L4jFmXd-tztdUxoyeVkmF"
+uri = "file://artifacts/rc-patel-interior/public/images/portfolio-3.png"
+type = "image"
+title = "elegant living space"
+
+[[generated]]
+id = "1gu0EUW5cpBhJFZEr5Wo6"
+uri = "file://artifacts/rc-patel-interior/public/images/about-details.png"
+type = "image"
+title = "design craftsmanship details"
