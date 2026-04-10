@@ -17,6 +17,7 @@ export default function Home() {
         <StatsSection />
         <ProcessSection />
         <ContactSection />
+        <SeoSection />
       </main>
       <Footer />
       <WhatsAppFAB />
@@ -628,6 +629,95 @@ function ContactSection() {
             )}
           </div>
         </div>
+      </div>
+    </section>
+  );
+}
+
+function SeoSection() {
+  const faqs = [
+    {
+      q: "Which is the best interior designer in Mumbai?",
+      a: "RC Patel Interior is one of the best and most trusted interior design companies in Mumbai. We specialise in residential interiors, modular kitchens, bedroom design, living room, office and commercial spaces. Call us at +91 89766 37493 for a free consultation.",
+    },
+    {
+      q: "How much does interior design cost in Mumbai?",
+      a: "Interior design cost in Mumbai depends on the size and type of project. RC Patel Interior offers transparent, competitive pricing for all budgets — from affordable home interiors to premium luxury projects. Contact us for a free quote.",
+    },
+    {
+      q: "Do you offer modular kitchen design in Mumbai?",
+      a: "Yes! RC Patel Interior provides complete modular kitchen design and installation across all Mumbai areas including Andheri, Bandra, Borivali, Malad, Thane, Navi Mumbai, and more.",
+    },
+    {
+      q: "Which areas in Mumbai do you serve?",
+      a: "We serve all areas of Mumbai — Andheri, Bandra, Borivali, Kandivali, Malad, Goregaon, Powai, Juhu, Worli, Thane, Navi Mumbai, Ghatkopar, Mulund, Chembur, Dadar, Lower Parel, and more.",
+    },
+    {
+      q: "Do you design offices and commercial spaces in Mumbai?",
+      a: "Absolutely. RC Patel Interior designs and executes office interiors, corporate spaces, retail shops, showrooms, restaurants, and hospitality interiors across Mumbai.",
+    },
+  ];
+
+  const areas = [
+    "Andheri", "Bandra", "Borivali", "Kandivali", "Malad", "Goregaon",
+    "Powai", "Juhu", "Worli", "Lower Parel", "Dadar", "Thane",
+    "Navi Mumbai", "Vashi", "Kharghar", "Ghatkopar", "Mulund", "Chembur",
+  ];
+
+  const services = [
+    "Residential Interior Design", "Modular Kitchen Design", "Bedroom Interior Design",
+    "Living Room & Drawing Room Design", "Office Interior Design", "Commercial Interior Design",
+    "False Ceiling (POP & Gypsum)", "Custom Wardrobe Design", "TV Unit & Entertainment Wall",
+    "Bathroom Design", "Retail & Showroom Interiors", "Restaurant & Cafe Interiors",
+    "3D Design & Visualization", "Turnkey Interior Projects", "Home Renovation",
+  ];
+
+  return (
+    <section className="py-16 sm:py-20 bg-secondary/20">
+      <div className="container mx-auto px-4 sm:px-6 max-w-5xl">
+
+        <div className="mb-12">
+          <h2 className="text-2xl sm:text-3xl font-light mb-4">
+            Interior Design Services in Mumbai
+          </h2>
+          <p className="text-muted-foreground text-sm sm:text-base leading-relaxed mb-6">
+            RC Patel Interior is a leading interior design studio based in Mumbai, Maharashtra. We offer complete interior design services for homes, offices, and commercial spaces across all Mumbai areas. Whether you need a modular kitchen, bedroom interior, living room makeover, false ceiling, custom furniture, or a full home renovation, our experienced team delivers quality craftsmanship at every step.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {services.map((s) => (
+              <span key={s} className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full border border-primary/20">
+                {s}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="mb-12">
+          <h3 className="text-xl sm:text-2xl font-light mb-4">Areas We Serve in Mumbai</h3>
+          <p className="text-muted-foreground text-sm mb-4">
+            RC Patel Interior provides interior design services across all neighbourhoods of Mumbai and the Mumbai Metropolitan Region (MMR).
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {areas.map((a) => (
+              <span key={a} className="text-xs bg-background border border-border px-3 py-1 rounded-full text-foreground/70">
+                Interior Designer {a}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <h3 className="text-xl sm:text-2xl font-light mb-6">Frequently Asked Questions</h3>
+          <div className="space-y-5">
+            {faqs.map((faq) => (
+              <div key={faq.q} className="border-b border-border pb-5">
+                <h4 className="font-medium text-sm sm:text-base mb-2">{faq.q}</h4>
+                <p className="text-muted-foreground text-sm leading-relaxed">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
       </div>
     </section>
   );
