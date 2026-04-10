@@ -121,7 +121,7 @@ function HeroSection() {
           transition={{ duration: 0.9, ease: "easeOut" }}
         >
           <p className="text-xs sm:text-sm uppercase tracking-[0.25em] sm:tracking-[0.3em] mb-4 sm:mb-6 text-white/70">
-            Interior Design Studio · Mumbai, India
+            Interior Design Studio · Surat, Gujarat
           </p>
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-light mb-6 sm:mb-8 max-w-4xl mx-auto leading-tight">
             Where Precision Meets{" "}
@@ -449,7 +449,7 @@ function ContactSection() {
 
             <div className="space-y-5 sm:space-y-6">
               {[
-                { icon: MapPin, label: "Studio Location", value: "Mumbai, India" },
+                { icon: MapPin, label: "Studio Location", value: "Surat, Gujarat" },
                 { icon: Phone, label: "Phone / WhatsApp", value: "+91 89766 37493" },
                 { icon: Mail, label: "Email", value: "crpmumbai15@gmail.com" },
               ].map(({ icon: Icon, label, value }) => (
@@ -643,7 +643,7 @@ function Footer() {
               R C Patel Interior
             </div>
             <p className="text-background/60 max-w-sm text-xs sm:text-sm leading-relaxed">
-              Transforming raw spaces into refined living environments. Serving residential and commercial clients across Mumbai, India.
+              Transforming raw spaces into refined living environments. Serving residential and commercial clients across Surat, Gujarat.
             </p>
           </div>
           <div className="flex gap-3">
