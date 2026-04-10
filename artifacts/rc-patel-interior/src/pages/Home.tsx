@@ -121,7 +121,7 @@ function HeroSection() {
           transition={{ duration: 0.9, ease: "easeOut" }}
         >
           <p className="text-xs sm:text-sm uppercase tracking-[0.25em] sm:tracking-[0.3em] mb-4 sm:mb-6 text-white/70">
-            Interior Design Studio · Surat, Gujarat
+            Interior Design Studio · Mumbai, India
           </p>
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-light mb-6 sm:mb-8 max-w-4xl mx-auto leading-tight">
             Where Precision Meets{" "}
@@ -169,7 +169,7 @@ function AboutSection() {
               Crafting Spaces with Intent.
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4 sm:mb-6 text-sm sm:text-base">
-              At R C Patel Interior, we believe a space should feel as good as it looks. Based in Surat, Gujarat, we specialise in residential and commercial interiors that balance aesthetic restraint with inviting warmth.
+              At R C Patel Interior, we believe a space should feel as good as it looks. Based in Mumbai, India, we specialise in residential and commercial interiors that balance aesthetic restraint with inviting warmth.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6 sm:mb-8 text-sm sm:text-base">
               From conceptual space planning to turnkey execution, we handle every detail — materials, contractors, timelines — so you simply step into your dream environment.
@@ -449,7 +449,7 @@ function ContactSection() {
 
             <div className="space-y-5 sm:space-y-6">
               {[
-                { icon: MapPin, label: "Studio Location", value: "Surat, Gujarat" },
+                { icon: MapPin, label: "Studio Location", value: "Mumbai, India" },
                 { icon: Phone, label: "Phone / WhatsApp", value: "+91 89766 37493" },
                 { icon: Mail, label: "Email", value: "crpmumbai15@gmail.com" },
               ].map(({ icon: Icon, label, value }) => (
@@ -643,7 +643,7 @@ function Footer() {
               R C Patel Interior
             </div>
             <p className="text-background/60 max-w-sm text-xs sm:text-sm leading-relaxed">
-              Transforming raw spaces into refined living environments. Serving residential and commercial clients across Surat, Gujarat.
+              Transforming raw spaces into refined living environments. Serving residential and commercial clients across Mumbai, India.
             </p>
           </div>
           <div className="flex gap-3">
